@@ -4,4 +4,15 @@ eureka:
     fetch-registry: true  
     serviceUrl:
       defaultZone: http://localhost:8083/eureka
-
+     
+microservice:
+  EUREKACLIENT1:
+    endpoints:
+      endpoint:
+        uri: http://EUREKACLIENT1/client1/checkClient1
+        
+microservice:
+  EUREKACLIENT2:
+    endpoints:
+      endpoint:
+        uri: http://EUREKACLIENT2/client2/getResponse
